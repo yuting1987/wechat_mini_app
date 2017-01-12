@@ -1,39 +1,41 @@
 App({
-  onLaunch: function () {
-    console.log('App Launch')
-  },
-  onShow: function () {
-    console.log('App Show')
-  },
-  onHide: function () {
-    console.log('App Hide')
-  },
+    //attrs
+    proFlag: 'dev', // 开发环境dev 生产环境prod
 
-  getUserInfo:function(cb){
-    var that = this;
-    if (that.globalData.isLogin){
-      return ;
-    };
-    if(this.globalData.userInfo){
-      typeof cb == "function" && cb(this.globalData.userInfo)
-    }else{
-      //调用登录接口
-      wx.login({
-        success: function () {
-          wx.getUserInfo({
-            success: function (res) {
-              that.globalData.isLogin = true;
-              that.globalData.userInfo = res.userInfo;
-              typeof cb == "function" && cb(that.globalData.userInfo)
-            }
-          })
+    globalData: {
+        isLogin: false,
+        userInfo: null
+    },
+
+    onLaunch: function () {
+        //获取用户信息
+        this.getUserInfo();
+        console.log(this.globalData.userInfo);
+    },
+
+    //获取用户信息
+    getUserInfo: function (cb) {
+        var _this = this;
+        if (_this.globalData.isLogin) {
+            return;
         }
-      });
-    }
-  },
 
-  globalData: {
-    isLogin: false,
-    userInfo: null
-  }
+        _this.login(function (data) {
+            that.globalData.isLogin = true;
+            that.globalData.userInfo = res.userInfo;
+        })
+    },
+
+    login: function (cb) {
+        //调用登录接口
+        wx.login({
+            success: function () {
+                wx.getUserInfo({
+                    success: function (res) {
+                        typeof cb === 'function' && cb(res);
+                    }
+                })
+            }
+        });
+    }
 });
