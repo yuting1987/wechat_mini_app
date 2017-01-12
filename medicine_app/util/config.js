@@ -1,9 +1,13 @@
-var app = getApp();
-
 var Config = {
+    //attrs
+    proFlag: 'dev', // 开发环境dev 生产环境prod
+    
+    //判定服务器是否存在的标志 暂定没有服务器
+    server : false,
+
     //接口
-    apis : {
-        
+    accounts : {
+        test : 'data/test' 
     },
 
     host: '',
@@ -14,15 +18,6 @@ var Config = {
         }
         return url;
     }
-
 };
-
-if (app.proFlag == 'dev'){
-    Config.host = '';
-}
-
-if (app.proFlag == 'prod'){
-    Config.host = '';
-}
 
 module.exports = Config;

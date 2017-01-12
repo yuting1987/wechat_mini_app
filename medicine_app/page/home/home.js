@@ -1,4 +1,5 @@
 var modal = require('../../util/modal');
+var ser = require('./service');
 
 var app = getApp();
 
@@ -8,22 +9,6 @@ Page({
     },
 
     onShow: function () {
-        modal.toast('加载中', 'loading');
-        this.setData({
-            id: 1
-        });
-    },
-
-    show: function (e) {
-        console.log(e);
-        this.setData({
-            id: 1
-        });
-    },
-
-    hide: function (e) {
-        this.setData({
-            id: 0
-        });
+        ser.testSer();
     }
 })

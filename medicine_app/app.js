@@ -1,9 +1,6 @@
-var ser = require('./service');
+var wx_ser = require('./wx/service');
 
 App({
-    //attrs
-    proFlag: 'dev', // 开发环境dev 生产环境prod
-
     globalData: {
         isLogin: false,
         userInfo: null
@@ -12,17 +9,16 @@ App({
     onLaunch: function () {
         //获取用户信息
         this.getUserInfo();
-        console.log(this.globalData.userInfo);
     },
 
     //获取用户信息
     getUserInfo: function (cb) {
-        var _this = this;
-        if (_this.globalData.isLogin) {
+        var that = this;
+        if (that.globalData.isLogin) {
             return;
         }
 
-        ser.login(function (data) {
+        wx_ser.login(function (res) {
             that.globalData.isLogin = true;
             that.globalData.userInfo = res.userInfo;
         })
