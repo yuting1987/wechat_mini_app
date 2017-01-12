@@ -1,3 +1,5 @@
+var ser = require('./service');
+
 App({
     //attrs
     proFlag: 'dev', // 开发环境dev 生产环境prod
@@ -20,22 +22,9 @@ App({
             return;
         }
 
-        _this.login(function (data) {
+        ser.login(function (data) {
             that.globalData.isLogin = true;
             that.globalData.userInfo = res.userInfo;
         })
-    },
-
-    login: function (cb) {
-        //调用登录接口
-        wx.login({
-            success: function () {
-                wx.getUserInfo({
-                    success: function (res) {
-                        typeof cb === 'function' && cb(res);
-                    }
-                })
-            }
-        });
     }
 });

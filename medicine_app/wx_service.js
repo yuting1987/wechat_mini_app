@@ -7,7 +7,7 @@ var Service = {
                     success: function (res) {
                         typeof cb === 'function' && cb(res);
                     }
-                })
+                });
             }
         });
     }
