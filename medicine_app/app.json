@@ -1,11 +1,11 @@
 {
   "pages": [
-      "page/component/index"
+      "page/home/home"
   ],
   "window": {
-    "navigationBarTextStyle": "black",
+    "navigationBarTextStyle": "white",
     "navigationBarTitleText": "医药",
-    "navigationBarBackgroundColor": "#fbf9fe",
+    "navigationBarBackgroundColor": "black",
     "backgroundColor": "#fbf9fe"
   },
   "networkTimeout": {

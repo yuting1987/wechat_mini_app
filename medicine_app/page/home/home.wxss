@@ -1,0 +1,12 @@
+.page{
+
+}
+
+.button{
+    background-color: green;
+    color: white;
+    height: 50px;
+    line-height: 30px;
+    margin: 5px;
+    border: 10px solid black;
+}
