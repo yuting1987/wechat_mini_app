@@ -39,7 +39,8 @@ var Service = {
         }else{
             var urls = baseOptions.url.split('/');
             var key = urls[urls.length - 1];
-            console.log(data[key]);
+            var res = data[key];
+            options.success && options.success(res);
         }
     }
 };

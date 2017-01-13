@@ -1,7 +1,17 @@
 <view class="page">
     <view class="header" bindtap="goSearch">
         <icon type="search" size="18"/>
-        <input class="search" type="text" />
+        <view class="search placeholder">带您识药，请输入您想要找的药品名</view>
     </view>
-    <view class="container"></view>
+    <view class="container">
+        <view class="new-space" wx:for="{{ news }}" wx:for-item="o">
+            <view class="left">
+                <text class="title"> {{ o.title }} </text>
+                <text class="content">{{ o.content }} </text>
+            </view>
+            <view class="right">
+                <image src="{{ o.imgUrl }}"></image>
+            </view>
+        </view>
+    </view>
 </view>

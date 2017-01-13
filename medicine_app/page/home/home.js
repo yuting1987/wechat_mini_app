@@ -6,11 +6,19 @@ var app = getApp();
 
 Page({
     data: {
-        
+        news : []
     },
 
     onShow: function () {
-        ser.testSer();
+        var _this = this;
+        ser.testSer(function(res){
+            if (!res.success){
+                return;
+            }
+            _this.setData({
+                'news' : res.result
+            });
+        });
     },
 
     goSearch : function(){
