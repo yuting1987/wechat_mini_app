@@ -1,11 +1,12 @@
 {
   "pages": [
-      "page/home/home"
+      "page/home/home",
+      "page/search/search"
   ],
   "window": {
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "test",
-    "navigationBarBackgroundColor": "black",
+    "navigationBarTitleText": "龙猫医师",
+    "navigationBarBackgroundColor": "rgb(81,195,50)",
     "backgroundColor": "#fbf9fe"
   },
   "networkTimeout": {
