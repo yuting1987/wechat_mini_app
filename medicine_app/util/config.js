@@ -8,6 +8,7 @@ var Config = {
     //接口
     accounts : {
         queryNews : 'data/queryNews',
+        queryAllNews : 'data/queryAllNews',
         querySearch : 'data/querySearch',
         getMedicineDetail : 'data/getMedicineDetail',
         getNewDetail : 'data/getNewDetail',

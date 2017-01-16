@@ -37,13 +37,14 @@
     border-bottom: 1rpx solid #dfdfdf;
     position: relative;
     height: 180rpx;
+    margin-right: 16rpx;
 }
 
 .newsList .right {
     width: 230rpx;
     height: 78%;
     position: absolute;
-    right: 16rpx;
+    right: 0;
     top: 11%;
 }
 .newsList .left {

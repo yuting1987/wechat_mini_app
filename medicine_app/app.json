@@ -1,12 +1,14 @@
 {
   "pages": [
       "page/home/home",
+      "page/medicineDetail/medicineDetail",
+      "page/newsDetail/newsDetail",
       "page/search/search"
   ],
   "window": {
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "龙猫医师",
-    "navigationBarBackgroundColor": "rgb(81,195,50)",
+    "navigationBarBackgroundColor": "#51c332",
     "backgroundColor": "#fbf9fe"
   },
   "networkTimeout": {

@@ -11,7 +11,7 @@ Page({
 
     onShow: function () {
         var _this = this;
-        ser.queryNewsSer(function(res){
+        ser.queryAllNewsSer(function(res){
             if (!res.success){
                 return;
             }
@@ -27,6 +27,6 @@ Page({
 
     itemClick : function(e){
         var id = e.currentTarget.dataset.id;
-        wx_api.go('search',{ id : id } );
+        wx_api.go('newsDetail',{ id : id } );
     }
 })

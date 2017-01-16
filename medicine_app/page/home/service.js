@@ -1,9 +1,9 @@
 var config = require('../../util/config');
 var wx_ser = require('../../wx/service');
 
-var queryNewsSer = function(success_callback){
+var queryAllNewsSer = function(success_callback){
     var options = {
-        url : config.get(config.accounts.queryNews),
+        url : config.get(config.accounts.queryAllNews),
         success : success_callback
     }
 
@@ -11,6 +11,6 @@ var queryNewsSer = function(success_callback){
 }
 
 module.exports = {
-    queryNewsSer : queryNewsSer
+    queryAllNewsSer : queryAllNewsSer
 }
 
