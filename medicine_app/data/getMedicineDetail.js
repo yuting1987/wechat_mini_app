@@ -1,7 +1,7 @@
 //请按照此格式进行填写
 var arr = require('./allMedicine');
 
-module.exports = function(attrs){
+var findById = function(id){
     var result = {};
     for (var i in arr){
         var obj = arr[i];
@@ -10,9 +10,13 @@ module.exports = function(attrs){
             break;
         }
     }
+    return result;
+};
+
+module.exports = function(attrs){
     return {
         success : true,
-        result : result,
+        result : findById(attrs.id),
         errorCode : null,
         errorMsg : null
     }
