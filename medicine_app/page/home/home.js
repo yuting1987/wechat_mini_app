@@ -11,7 +11,7 @@ Page({
 
     onShow: function () {
         var _this = this;
-        ser.testSer(function(res){
+        ser.queryNewsSer(function(res){
             if (!res.success){
                 return;
             }

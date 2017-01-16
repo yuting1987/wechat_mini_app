@@ -40,6 +40,7 @@ var Service = {
             var urls = baseOptions.url.split('/');
             var key = urls[urls.length - 1];
             var res = data[key];
+            res = typeof res === 'function' ? res(baseOptions.data) : res;
             options.success && options.success(res);
         }
     }

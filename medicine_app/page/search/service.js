@@ -1,9 +1,9 @@
 var config = require('../../util/config');
 var wx_ser = require('../../wx/service');
 
-var testSer = function(success){
+var searchSer = function(success){
     var options = {
-        url : config.get(config.accounts.test1),
+        url : config.get(config.accounts.querySearch),
         success : success
     }
 
@@ -11,6 +11,6 @@ var testSer = function(success){
 }
 
 module.exports = {
-    testSer : testSer
+    searchSer :searchSer
 }
 

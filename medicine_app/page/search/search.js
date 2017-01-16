@@ -61,7 +61,7 @@ Page({
                 });
                 console.log(data);
                 Api.setStorage('history',data);
-                ser.testSer(function(res){
+                ser.searchSer(function(res){
                     _this.setData({
                         listData : res.result.medicine,
                         newsData : res.result.news,
@@ -108,7 +108,7 @@ Page({
                     contentType : "2"
                 });
                 Api.setStorage('history',data);
-                ser.testSer(function(res){
+                ser.searchSer(function(res){
                     _this.setData({
                         listData : res.result.medicine,
                         newsData : res.result.news,

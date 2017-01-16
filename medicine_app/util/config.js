@@ -7,8 +7,10 @@ var Config = {
 
     //接口
     accounts : {
-        test : 'data/test' ,
-        test1 : 'data/test1'
+        queryNews : 'data/queryNews',
+        querySearch : 'data/querySearch',
+        getMedicineDetail : 'data/getMedicineDetail',
+        getNewDetail : 'data/getNewDetail',
     },
 
     host: '',
