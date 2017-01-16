@@ -29,21 +29,34 @@
     font-size: 26rpx;
 }
 
-.new-space{
-    height: 200rpx;
-    padding-left: 50rpx;
-    padding-right: 50rpx;
-    box-sizing: border-box;
+.newsList{
+    font-size: 30rpx;
+    margin-left: 50rpx;
+    line-height: 30rpx;
+    padding: 0 0 20rpx;
+    border-bottom: 1rpx solid #dfdfdf;
+    position: relative;
+    height: 180rpx;
 }
 
-.new-space .left{
-    float: left;
-    width: 70%;
+.newsList .right {
+    width: 230rpx;
+    height: 78%;
+    position: absolute;
+    right: 16rpx;
+    top: 11%;
 }
-
-.new-space .right{
-    float: right;
-    width: 30%;
+.newsList .left {
+    width: 63%;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    overflow: hidden;
+    display: inline-block;
+    height: 150rpx;
 }
-
+.time {
+    position: absolute;
+    bottom: 30rpx;
+    left: 0;
+}
 

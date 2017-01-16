@@ -8,11 +8,8 @@ var Util = {
     },
 
     getResultsByRows : function(results,rows){
-       var r = [];
-       for (var i = 0;i < rows ; i++){
-         r.push(results[i]);
-       }
-       return r;
+       results = results.slice(0,rows);
+       return results;
     }
 };
 
