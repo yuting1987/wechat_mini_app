@@ -1,12 +1,10 @@
 var config = require('../../util/config');
 var wx_ser = require('../../wx/service');
 
-var testSer = function(){
+var testSer = function(success){
     var options = {
-        url : config.get(config.accounts.test),
-        success : function(res){
-            console.log(res);
-        }
+        url : config.get(config.accounts.test1),
+        success : success
     }
 
     wx_ser.request(options);

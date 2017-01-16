@@ -1,7 +1,39 @@
 <view class="page">
     <view class="header">
         <icon type="search" size="18"/>
-        <input class="search" type="text" />
+        <input class="search" focus="true" type="text" placeholder="带您识药，请输入您想要找的药品名" bindinput="queryMedicine" value="{{inputValue}}"/>
     </view>
-    <view class="container"></view>
-</view>
+    <view hidden="{{contentType == '3'?true:false}}" class="container">
+        <view class="title">
+            <text>查询记录</text>
+            <text class="clear" bindtap='rm'>清除历史</text>
+        </view>
+        <view class="emptyList" hidden='{{contentType == "1"?false:true}}'>无</view>
+        <view hidden="{{contentType == '2'?false:true}}" wx:for="{{historyArr}}" bindtap='query' data-text="{{item}}" class="list">
+        {{item}}
+        </view>
+    </view>
+    <view class="medicineTitle" hidden="{{contentType == '3'?false:true}}">
+        药品
+    </view>
+    <view wx:for="{{listData}}"  hidden="{{contentType == '3'?false:true}}" class="medicineList">
+        <text class="left">
+            {{item.title}}\n
+            适应症状：{{item.content.symptoms}}\n
+            其他字段：{{item.content.item1}}\n
+            其他字段：{{item.content.item2}}\n
+        </text>
+        <!--<text class='detail'>查看详情</text>-->
+        <image class="right" src="{{item.imgUrl}}"></image>
+    </view>
+    <view class="newsTitle" hidden="{{contentType == '3'?false:true}}">
+        热闻
+    </view>
+    <view wx:for="{{newsData}}"  hidden="{{contentType == '3'?false:true}}" class="newsList">
+        <text class="left">
+            {{item.title}}
+        </text>
+        <text class='time'>{{item.content.time}}</text>
+        <image class="right" src="{{item.imgUrl}}"></image>
+    </view>
+</view>   
