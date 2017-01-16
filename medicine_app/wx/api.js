@@ -1,6 +1,12 @@
+var util = require('../util/util');
+
 var Api = {
     go : function(url,attrs){
-        url = '../' + url + '/' + url; 
+        url = '../' + url + '/' + url;
+        if (attrs){
+          url = url + '?' + util.convertFormData(attrs);
+        };
+        console.log(url);
         wx.navigateTo({
             url : url
         });

@@ -14,6 +14,10 @@ Page({
         contentType : ''
     },
 
+    onLoad : function(options){
+        console.log(options);
+    },
+
     onShow: function () {
         var _this = this;
         wx.getStorage({

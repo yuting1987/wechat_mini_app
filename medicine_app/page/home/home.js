@@ -23,5 +23,10 @@ Page({
 
     goSearch : function(){
         wx_api.go('search');
-    }  
+    },
+
+    itemClick : function(e){
+        var id = e.currentTarget.dataset.id;
+        wx_api.go('search',{ id : id } );
+    }
 })

@@ -4,7 +4,7 @@
         <view class="search placeholder">带您识药，请输入您想要找的药品名</view>
     </view>
     <view class="container">
-        <view wx:for="{{news}}" class="newsList">
+        <view wx:for="{{news}}" data-id="{{ item.id }}" bindtap="itemClick" class="newsList">
             <text class="left">
                 {{item.title}}
             </text>
