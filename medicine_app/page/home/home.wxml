@@ -4,14 +4,12 @@
         <view class="search placeholder">带您识药，请输入您想要找的药品名</view>
     </view>
     <view class="container">
-        <view class="new-space" wx:for="{{ news }}" wx:for-item="o">
-            <view class="left">
-                <text class="title"> {{ o.title }} </text>
-                <text class="content">{{ o.content }} </text>
-            </view>
-            <view class="right">
-                <image src="{{ o.imgUrl }}"></image>
-            </view>
+        <view wx:for="{{news}}" class="newsList">
+            <text class="left">
+                {{item.title}}
+            </text>
+            <text class='time'>{{item.content.time}}</text>
+            <image class="right" src="{{item.imgUrl}}"></image>
         </view>
     </view>
 </view>
