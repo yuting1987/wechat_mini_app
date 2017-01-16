@@ -59,7 +59,6 @@ var Api = {
     clearStorage : function(){
         wx.clearStorage();
     }
-
 }
 
 module.exports = Api;

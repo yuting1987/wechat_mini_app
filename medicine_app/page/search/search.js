@@ -112,7 +112,7 @@ Page({
                     contentType : "2"
                 });
                 Api.setStorage('history',data);
-                ser.searchSer(function(res){
+                ser.searchSer({key : text},function(res){
                     _this.setData({
                         listData : res.result.medicine,
                         newsData : res.result.news,

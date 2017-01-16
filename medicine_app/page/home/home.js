@@ -20,6 +20,15 @@ Page({
             });
         });
     },
+    
+    //注册分享
+    onShareAppMessage: function () {
+        return {
+            title: '龙猫医师',
+            desc: '龙猫医师',
+            path: '/page/home/home'
+        }
+    },
 
     goSearch : function(){
         wx_api.go('search');
