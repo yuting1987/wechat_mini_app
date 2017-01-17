@@ -1,18 +1,11 @@
-module.exports = [
-    {
-        id : 2,
-        imgUrl : 'http://192.168.131.58:8080/picture/xiaoer.jpg',
-        vendor : '葵花',
-        title : '小儿止咳糖浆',
-        content : '测试测试哈哈哈哈哈哈',
-        date : '2017-01-02'
-    },
-    {
-        id : 1,
-        imgUrl : 'http://192.168.131.58:8080/picture/meilin.jpg',
-        vendor : '强生',
-        title : '美林儿童退烧药',
-        content : '美林由上海强生制药有限公司生产，主要产品有布洛芬混悬液和布洛芬混悬滴剂。布洛芬混悬液适用于1-12岁儿童，用于儿童普通感冒或流行感冒引起的发热。也用于缓解儿童轻至中度疼痛，如头痛、关节痛、偏头痛、牙痛、肌肉痛、神经痛。布洛芬混悬滴剂专为婴幼儿设计，用于婴幼儿的退热，缓解由于感冒、流感等引起的轻度头痛、咽痛及牙痛等。',
-        date : '2017-01-02'
-    }
-]
+var medicines_arr = require('./allMedicineDetail');
+
+var arr = [];
+for (var i = 0 ; i < medicines_arr.length ; i++){
+    var o = medicines_arr[i];
+    delete o.content;
+    delete o.imgUrl;
+    arr.push(o);  
+};
+//干掉一个字段content
+module.exports = arr;

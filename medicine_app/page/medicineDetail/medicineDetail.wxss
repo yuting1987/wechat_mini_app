@@ -64,14 +64,13 @@
     padding: 20rpx 0;
     border-bottom: 1rpx solid #dfdfdf;
     position: relative;
-    margin-right: 16rpx;
 }
 
 .medicineList .right {
     width: 230rpx;
     height: 78%;
     position: absolute;
-    right: 0;
+    right: 16rpx;
     top: 36rpx;
 }
 .medicineList .left {
@@ -85,7 +84,7 @@
 .medicineList .detail{
     color: lightgreen;
     display: block;
-    background: url('../../img/arrowRightGreen.png') no-repeat center right;
+    background: url('../../img/arrowright.png') no-repeat center right;
     background-size: 26rpx;
     width: 148rpx;
 }
@@ -97,7 +96,6 @@
     background: url('../../img/medicine.png') no-repeat center left;
     background-size: 30rpx;
     padding-left: 35rpx;
-    margin-right: 16rpx;
 }
 .newsTitle{
     font-size: 30rpx;
@@ -107,7 +105,6 @@
     background: url('../../img/news.png') no-repeat center left;
     background-size: 30rpx;
     padding-left: 35rpx;
-    margin-right: 16rpx;
 }
 .newsList{
     font-size: 30rpx;
@@ -117,14 +114,13 @@
     border-bottom: 1rpx solid #dfdfdf;
     position: relative;
     height: 180rpx;
-    margin-right: 16rpx;
 }
 
 .newsList .right {
     width: 230rpx;
     height: 78%;
     position: absolute;
-    right: 0;
+    right: 16rpx;
     top: 11%;
 }
 .newsList .left {
@@ -140,21 +136,7 @@
     bottom: 30rpx;
     left: 0;
 }
-.more{
-    font-size: 30rpx;
-    margin-left: 50rpx;
-    margin-right: 16rpx;
-    line-height: 80rpx;
-    border-bottom: 1rpx solid #dfdfdf;
-    background: url('../../img/arrowRightGreen.png') no-repeat center right;
-    background-size: 30rpx;
-    color: #51c332;
-}
+
    
-.empty{
-    text-align: center;
-    font-size: 30rpx;
-    line-height: 800rpx;
-}
 
 

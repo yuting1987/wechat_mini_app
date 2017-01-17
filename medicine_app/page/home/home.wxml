@@ -9,7 +9,7 @@
             <text class="left">
                 {{item.title}}
             </text>
-            <text class='time'>{{item.content.time}}</text>
+            <text class='time'>{{item.date}}</text>
             <image class="right" src="{{item.imgUrl}}"></image>
         </view>
     </view>

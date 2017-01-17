@@ -42,19 +42,20 @@
 
 .newsList{
     font-size: 30rpx;
-    margin-left: 50rpx;
+    margin-left: 30rpx;
     line-height: 30rpx;
     padding: 0 0 20rpx;
     border-bottom: 1rpx solid #dfdfdf;
     position: relative;
     height: 180rpx;
+    margin-right: 30rpx;
 }
 
 .newsList .right {
     width: 230rpx;
     height: 78%;
     position: absolute;
-    right: 16rpx;
+    right: 0;
     top: 11%;
 }
 .newsList .left {
@@ -69,5 +70,6 @@
     position: absolute;
     bottom: 30rpx;
     left: 0;
+    color : #bebebe;
 }
 

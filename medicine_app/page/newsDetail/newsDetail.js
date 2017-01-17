@@ -65,23 +65,19 @@ Page({
                 });
                 console.log(data);
                 Api.setStorage('history',data);
-                ser.searchSer({key:e.detail.value},function(res){
+                ser.searchSer(function(res){
                     _this.setData({
-                        listData : res.result.medicine.slice(0,1),
-                        newsData : res.result.news.slice(0,2),
+                        listData : res.result.medicine,
+                        newsData : res.result.news,
                         contentType : '3'
                     });
                 });
               },
               fail : function(res){
                 Api.setStorage('history',[e.detail.value]);             
-                ser.searchSer({key:e.detail.value},function(res){
-                    _this.setData({
-                        historyArr : [e.detail.value],
-                        listData : res.result.medicine.slice(0,1),
-                        newsData : res.result.news.slice(0,2),
-                        contentType : '3'
-                    });
+                _this.setData({
+                    historyArr : [e.detail.value],
+                    contentType : "2"
                 });
               }
             }); 
@@ -116,12 +112,10 @@ Page({
                     contentType : "2"
                 });
                 Api.setStorage('history',data);
-                ser.searchSer({key:text},function(res){
-                    console.log(res.result.medicine);
-                    console.log(res.result.news);
+                ser.searchSer(function(res){
                     _this.setData({
-                        listData : res.result.medicine.slice(0,1),
-                        newsData : res.result.news.slice(0,2),
+                        listData : res.result.medicine,
+                        newsData : res.result.news,
                         contentType : '3'
                     });
                 });
