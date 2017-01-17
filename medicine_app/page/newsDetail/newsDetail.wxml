@@ -1,3 +1,10 @@
 <view class="page">
-    news detail view
+    <view class="head">泰诺林（小）（对乙酰氨基酚）</view>
+    <image src="http://mmbiz.qpic.cn/mmbiz/ic9zTADVtZkkOTC3eV1MAsYRZiaSGkUuceFvcfq05Ad2H7CSbyC1bUc5pzfl2fiaan1wJM0PWxapQibLDo1r2lJA1Q/0?wx_fmt=jpeg"  style="width: {{imageWidth}}px; height: {{imageHeight}}px;" bindload="imageLoad"></image>
+    
+    <view wx:for="{{}}" class="content">
+        <view>功能主治：</view>
+        <text>XXXXXXXXXXXXXXXXXXXX\n</text>
+        <text>XXXXXXXXXXXXXXXXXXXX\n</text>
+    </view>
 </view>   

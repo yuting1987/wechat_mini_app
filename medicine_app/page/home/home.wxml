@@ -10,7 +10,7 @@
                 {{item.title}}
             </text>
             <text class='time'>{{item.date}}</text>
-            <image class="right" src="{{item.imgUrl}}"></image>
+            <image class="right" src="{{item.iconUrl}}"></image>
         </view>
     </view>
 </view>

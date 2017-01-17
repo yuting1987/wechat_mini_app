@@ -1,17 +1,17 @@
 var config = require('../../util/config');
 var wx_ser = require('../../wx/service');
 
-var searchSer = function(success){
+var getMedicineDetailSer = function(data,success){
     var options = {
-        url : config.get(config.accounts.querySearch),
+        url : config.get(config.accounts.getMedicineDetail),
         success : success,
-        data : { key : '测试'}
+        data : data
     }
 
     wx_ser.request(options);
 }
 
 module.exports = {
-    searchSer :searchSer
+    getMedicineDetailSer :getMedicineDetailSer
 }
 
