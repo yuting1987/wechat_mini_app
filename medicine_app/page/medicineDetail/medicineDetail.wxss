@@ -1,142 +1,21 @@
 .page{
-    
-}
-
-.header{
-    height: 120rpx;
-    background-color: rgb(81,195,50);
-    padding: 20rpx 50rpx;
-    box-sizing: border-box;
-    position: relative;
-}
-
-.header icon{
-    position: absolute;
-    z-index: 2;
-    left: 76rpx;
-    top:40rpx;
-}
-
-.search{
-    height: 72rpx;
-    line-height: 72rpx;
-    background-color:white;
-    border-radius: 30rpx;
-    padding-left: 80rpx;
-    padding-top: 4rpx;
-    font-size: 26rpx;
-}
-
-.title{
-    padding: 0 50rpx;
-    line-height: 80rpx;
     font-size: 30rpx;
-    border-bottom: 1rpx solid #dfdfdf;
-}
-.clear{
-    float: right;
-}
-
-.list{
-    font-size: 30rpx;
-    margin-left: 50rpx;
-    line-height: 80rpx;
-    border-bottom: 1rpx solid #dfdfdf;
-}
-
-.list:last-child{
-    margin-left: 0;
-    padding-left: 50rpx;
-}
-.emptyList{
-    font-size: 30rpx;
-    padding-left: 50rpx;
-    line-height: 80rpx;
-    border-bottom: 1rpx solid #dfdfdf;
-}
-.container{
-
-}
-.medicineList{
-    font-size: 30rpx;
-    margin-left: 50rpx;
-    line-height: 30rpx;
     padding: 20rpx 0;
+}
+.content{
+    margin: 0 40rpx;
     border-bottom: 1rpx solid #dfdfdf;
-    position: relative;
+    line-height:50rpx;
+    padding: 10rpx 0;
 }
 
-.medicineList .right {
-    width: 230rpx;
-    height: 78%;
-    position: absolute;
-    right: 16rpx;
-    top: 36rpx;
+.head{
+    margin: 0 40rpx;
+    line-height: 50rpx;
 }
-.medicineList .left {
-    width: 63%;
-    text-overflow: ellipsis;
-    white-space:nowrap;
-    overflow: hidden;
-    display: inline-block;
+.title{
+    color: #51c332;
 }
-
-.medicineList .detail{
-    color: lightgreen;
-    display: block;
-    background: url('../../img/arrowright.png') no-repeat center right;
-    background-size: 26rpx;
-    width: 148rpx;
-}
-.medicineTitle{
-    font-size: 30rpx;
-    margin-left: 50rpx;
-    line-height: 80rpx;
-    border-bottom: 1rpx solid #dfdfdf;
-    background: url('../../img/medicine.png') no-repeat center left;
-    background-size: 30rpx;
-    padding-left: 35rpx;
-}
-.newsTitle{
-    font-size: 30rpx;
-    margin-left: 50rpx;
-    line-height: 80rpx;
-    border-bottom: 1rpx solid #dfdfdf;
-    background: url('../../img/news.png') no-repeat center left;
-    background-size: 30rpx;
-    padding-left: 35rpx;
-}
-.newsList{
-    font-size: 30rpx;
-    margin-left: 50rpx;
-    line-height: 30rpx;
-    padding: 0 0 20rpx;
-    border-bottom: 1rpx solid #dfdfdf;
-    position: relative;
-    height: 180rpx;
-}
-
-.newsList .right {
-    width: 230rpx;
-    height: 78%;
-    position: absolute;
-    right: 16rpx;
-    top: 11%;
-}
-.newsList .left {
-    width: 63%;
-    text-overflow: ellipsis;
-    white-space:nowrap;
-    overflow: hidden;
-    display: inline-block;
-    height: 150rpx;
-}
-.time {
-    position: absolute;
-    bottom: 30rpx;
-    left: 0;
-}
-
    
 
 

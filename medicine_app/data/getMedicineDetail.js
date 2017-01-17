@@ -5,7 +5,7 @@ var findById = function(id){
     var result = {};
     for (var i in arr){
         var obj = arr[i];
-        if (obj.id === attrs.id){
+        if (''+obj.id === ''+id){
             result = obj;
             break;
         }

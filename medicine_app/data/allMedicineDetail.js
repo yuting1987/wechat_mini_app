@@ -1,8 +1,8 @@
 module.exports = [
     {
         id: 2,
-        iconUrl : 'http://192.168.131.58:8080/picture/xiaoer.jpg',
-        imgUrl: 'http://192.168.131.58:8080/picture/xiaoer.jpg',
+        iconUrl : 'http://192.168.144.148:8080/picture/xiaoer.jpg',
+        imgUrl: 'http://192.168.144.148:8080/picture/xiaoer.jpg',
         vendor : '葵花',
         title: '小儿止咳糖浆',
         des: '测试测试哈哈哈哈哈哈',
@@ -22,8 +22,8 @@ module.exports = [
         date: '2017-01-02'
     }, {
         id: 1,
-        iconUrl : 'http://192.168.131.58:8080/picture/anshi.png',
-        imgUrl: 'http://192.168.131.58:8080/picture/anshi.png',
+        iconUrl : 'http://192.168.144.148:8080/picture/anshi.png',
+        imgUrl: 'http://192.168.144.148:8080/picture/anshi.png',
         vendor : '强生',
         title : '美林儿童退烧药',
         content: [
