@@ -1,8 +1,8 @@
 <view class="page">
     <view class="head">{{listData.title}}</view>
-    <image src="{{listData.imgUrl}}"  style="width: {{imageWidth}}px; height: {{imageHeight}}px;" bindload="imageLoad"></image>
+    <image src="{{listData.imgUrl}}"  style="padding-left : 40rpx ; width: {{imageWidth - 40}}px; height: {{imageHeight - 40}}px;" bindload="imageLoad"></image>
     <view wx:for="{{listData.content}}" class="content">
-        <text class="title">{{item.title}}：\n</text>
+        <view class="title">{{item.title}}：</view>
         <text wx:for="{{item.des}}" wx:for-item="str">{{str}}\n</text>
     </view>
 </view>      
