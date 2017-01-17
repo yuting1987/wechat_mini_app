@@ -21,6 +21,15 @@ var Util = {
         }
         formData = formData.substr(0,formData.length - 1);
         return formData;
+    },
+    
+    extendByObj : function(obj){
+      var newObj = {};
+      var k,v;
+      for (k in obj){
+        newObj[k] = obj[k]; 
+      }
+      return newObj;
     }
 }
 
