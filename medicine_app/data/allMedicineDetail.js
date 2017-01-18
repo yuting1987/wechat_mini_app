@@ -1,5 +1,27 @@
 module.exports = [
     {
+        id: 3,
+        iconUrl : 'http://192.168.144.148:8080/picture/xiaoer.jpg',
+        imgUrl: 'http://192.168.144.148:8080/picture/xiaoer.jpg',
+        vendor : '葵花',
+        title: '小儿止咳糖浆2',
+        des: '测试测试哈哈哈哈哈哈',
+        content: [
+            {
+                title: '详情描述',
+                des: ['详情描述2哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈']
+            },
+            {
+                title: '用法用量',
+                des: [
+                    '每日1勺',
+                    '每日2勺'
+                ]
+            },
+        ],
+        date: '2017-01-03'
+    },
+    {
         id: 2,
         iconUrl : 'http://192.168.144.148:8080/picture/xiaoer.jpg',
         imgUrl: 'http://192.168.144.148:8080/picture/xiaoer.jpg',

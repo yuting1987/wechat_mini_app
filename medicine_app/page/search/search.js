@@ -6,6 +6,8 @@ var app = getApp();
 
 Page({
     data: {
+        allListData : null,
+        allNewsData : null,
         listData: null,
         newsData: null,
         inputValue: '',
@@ -16,9 +18,6 @@ Page({
 
     onLoad : function(options){
         console.log(options);
-    },
-
-    onShow: function () {
         var _this = this;
         wx.getStorage({
           key: 'history',
@@ -35,6 +34,10 @@ Page({
             });
           }
         })
+    },
+
+    onShow: function () {
+        
     },
 
     queryMedicine : function(e){
@@ -67,8 +70,11 @@ Page({
                 Api.setStorage('history',data);
                 ser.searchSer({key:e.detail.value},function(res){
                     _this.setData({
+                        allListData : res.result.medicine,
                         listData : res.result.medicine.slice(0,1),
+                        allNewsData : res.result.news,
                         newsData : res.result.news.slice(0,2),
+                        inputValue: e.detail.value,
                         contentType : '3'
                     });
                 });
@@ -78,8 +84,11 @@ Page({
                 ser.searchSer({key:e.detail.value},function(res){
                     _this.setData({
                         historyArr : [e.detail.value],
+                        allListData : res.result.medicine,
                         listData : res.result.medicine.slice(0,1),
+                        allNewsData : res.result.news,
                         newsData : res.result.news.slice(0,2),
+                        inputValue: e.detail.value,
                         contentType : '3'
                     });
                 });
@@ -120,12 +129,30 @@ Page({
                     console.log(res.result.medicine);
                     console.log(res.result.news);
                     _this.setData({
+                        allListData : res.result.medicine,
                         listData : res.result.medicine.slice(0,1),
+                        allNewsData : res.result.news,
                         newsData : res.result.news.slice(0,2),
                         contentType : '3'
                     });
                 });
               }
             }); 
+    },
+
+    medicineClick : function(e){
+        var id = e.currentTarget.dataset.id;
+        Api.go('medicineDetail',{id : id});
+    },
+
+    newsClick : function(e){
+        var id = e.currentTarget.dataset.id;
+        Api.go('newsDetail',{id : id});
+    },
+
+    searchMore : function(e){
+        var id = e.currentTarget.dataset.type;
+        var key = e.currentTarget.dataset.value;
+        Api.go('listView',{ key : key ,id : id} );
     }
 })

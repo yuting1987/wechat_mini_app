@@ -1,0 +1,89 @@
+/* page/listView/listView.wxss */
+.list{
+    font-size: 30rpx;
+    margin-left: 50rpx;
+    line-height: 80rpx;
+    border-bottom: 1rpx solid #dfdfdf;
+}
+
+.list:last-child{
+    margin-left: 0;
+    padding-left: 50rpx;
+}
+.emptyList{
+    font-size: 30rpx;
+    padding-left: 50rpx;
+    line-height: 80rpx;
+    border-bottom: 1rpx solid #dfdfdf;
+}
+.medicineList{
+    font-size: 30rpx;
+    margin-left: 30rpx;
+    line-height: 30rpx;
+    padding: 20rpx 0;
+    border-bottom: 1rpx solid #dfdfdf;
+    position: relative;
+    margin-right: 30rpx;
+}
+
+.medicineList .right {
+    width: 230rpx;
+    height: 78%;
+    position: absolute;
+    right: 0;
+    top: 11%;
+}
+.medicineList .left {
+    width: 63%;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.medicineList .detail{
+    color: lightgreen;
+    display: block;
+    background: url('../../img/arrowRightGreen.png') no-repeat center right;
+    background-size: 26rpx;
+    width: 148rpx;
+}
+
+.newsList{
+    font-size: 30rpx;
+    margin-left: 30rpx;
+    line-height: 30rpx;
+    padding: 0 0 20rpx;
+    border-bottom: 1rpx solid #dfdfdf;
+    position: relative;
+    height: 180rpx;
+    margin-right: 30rpx;
+}
+
+.newsList .right {
+    width: 230rpx;
+    height: 78%;
+    position: absolute;
+    right: 0;
+    top: 11%;
+}
+.newsList .left {
+    width: 63%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+    height: 150rpx;
+    word-wrap: break-word; 
+    word-break: normal; 
+    line-height: 40rpx;
+}
+.time {
+    position: absolute;
+    bottom: 30rpx;
+    left: 0;
+    color : #bebebe;
+}
+
+.c_be{
+    color: #bebebe;
+}

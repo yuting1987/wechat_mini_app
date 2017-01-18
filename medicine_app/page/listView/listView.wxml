@@ -1,0 +1,20 @@
+<!--page/listView/listView.wxml-->
+<view>
+    <view wx:for="{{listData}}"  hidden="{{contentType == 'medicine'?false:true}}" data-id="{{item.id}}" class="medicineList" bindtap="medicineClick">
+        <text class="left">
+            {{item.title}}\n
+        </text>
+        <text class="left c_be">
+            {{item.des}}\n
+        </text>
+        <text class='detail'>查看详情</text>
+        <image class="right" src="{{item.iconUrl}}"></image>
+    </view>
+    <view wx:for="{{newsData}}"  hidden="{{contentType == 'news'?false:true}}"  data-id="{{item.id}}" class="newsList" bindtap="newsClick">
+        <text class="left">
+            {{item.title}}
+        </text>
+        <text class='time'>{{item.date}}</text>
+        <image class="right" src="{{item.iconUrl}}"></image>
+    </view>
+</view>

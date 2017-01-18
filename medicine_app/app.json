@@ -3,7 +3,8 @@
       "page/home/home",
       "page/medicineDetail/medicineDetail",
       "page/newsDetail/newsDetail",
-      "page/search/search"
+      "page/search/search",
+      "page/listView/listView"
   ],
   "window": {
     "navigationBarTextStyle": "white",

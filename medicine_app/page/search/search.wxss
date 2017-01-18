@@ -39,14 +39,14 @@
 
 .list{
     font-size: 30rpx;
-    margin-left: 50rpx;
+    margin-left: 30rpx;
     line-height: 80rpx;
     border-bottom: 1rpx solid #dfdfdf;
 }
 
 .list:last-child{
     margin-left: 0;
-    padding-left: 50rpx;
+    padding-left: 30rpx;
 }
 .emptyList{
     font-size: 30rpx;
@@ -59,12 +59,12 @@
 }
 .medicineList{
     font-size: 30rpx;
-    margin-left: 50rpx;
+    margin-left: 30rpx;
     line-height: 30rpx;
-    padding: 20rpx 0;
+    padding: 0 0 20rpx;
     border-bottom: 1rpx solid #dfdfdf;
     position: relative;
-    margin-right: 16rpx;
+    margin-right: 30rpx;
 }
 
 .medicineList .right {
@@ -91,33 +91,33 @@
 }
 .medicineTitle{
     font-size: 30rpx;
-    margin-left: 50rpx;
+    margin-left: 30rpx;
     line-height: 80rpx;
     border-bottom: 1rpx solid #dfdfdf;
     background: url('../../img/medicine.png') no-repeat center left;
     background-size: 30rpx;
     padding-left: 35rpx;
-    margin-right: 16rpx;
+    margin-right: 30rpx;
 }
 .newsTitle{
     font-size: 30rpx;
-    margin-left: 50rpx;
+    margin-left: 30rpx;
     line-height: 80rpx;
     border-bottom: 1rpx solid #dfdfdf;
     background: url('../../img/news.png') no-repeat center left;
     background-size: 30rpx;
     padding-left: 35rpx;
-    margin-right: 16rpx;
+    margin-right: 30rpx;
 }
 .newsList{
     font-size: 30rpx;
-    margin-left: 50rpx;
+    margin-left: 30rpx;
     line-height: 30rpx;
     padding: 0 0 20rpx;
     border-bottom: 1rpx solid #dfdfdf;
     position: relative;
     height: 180rpx;
-    margin-right: 16rpx;
+    margin-right: 30rpx;
 }
 
 .newsList .right {
@@ -130,20 +130,23 @@
 .newsList .left {
     width: 63%;
     text-overflow: ellipsis;
-    white-space:nowrap;
     overflow: hidden;
     display: inline-block;
     height: 150rpx;
+    word-wrap: break-word; 
+    word-break: normal; 
+    line-height: 40rpx;
 }
 .time {
     position: absolute;
     bottom: 30rpx;
     left: 0;
+    color : #bebebe;
 }
 .more{
     font-size: 30rpx;
-    margin-left: 50rpx;
-    margin-right: 16rpx;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
     line-height: 80rpx;
     border-bottom: 1rpx solid #dfdfdf;
     background: url('../../img/arrowRightGreen.png') no-repeat center right;
@@ -157,4 +160,7 @@
     line-height: 800rpx;
 }
 
+.c_be{
+    color: #bebebe;
+}
 
