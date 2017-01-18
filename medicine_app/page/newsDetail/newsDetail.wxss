@@ -13,3 +13,6 @@
     margin: 0 40rpx;
     line-height: 50rpx;
 }
+.title{
+    color: #51c332;
+}
