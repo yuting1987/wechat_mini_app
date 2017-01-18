@@ -55,14 +55,14 @@ var Util = {
         return imageSize;
     },
 
-    extendByObj : function(obj){
-      var newObj = {};
-      var k,v;
-      for (k in obj){
-        newObj[k] = obj[k];
-      }
-      return newObj;
+    extendByObj : function(myObj){
+        if(typeof(myObj) != 'object') return myObj;
+        if(myObj == null) return myObj;
+        var myNewObj = new Object();
+        for(var i in myObj)
+            myNewObj[i] = this.extendByObj(myObj[i]);
+        return myNewObj;
     }
-}
+};
 
 module.exports = Util;

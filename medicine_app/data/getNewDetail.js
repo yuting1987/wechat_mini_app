@@ -1,5 +1,5 @@
 //请按照此格式进行填写
-var arr = require('./allNews'); 
+var arr = require('./allNewsDetails');
 
 var findById = function(id){
     var result = {};
