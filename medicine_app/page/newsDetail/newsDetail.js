@@ -7,18 +7,19 @@ var app = getApp();
 Page({
     data: {
         listData: null,
-        newsData: null,
-        inputValue: '',
-        time : null,
-        historyArr : null,
-        contentType : '',
         imageWidth : 0,
         imageHeight : 0
     },
 
     onLoad : function(options){
+        var _this = this;
         console.log(options);
-        
+        ser.getNewsDetailSer({id : options.id},function(res){
+
+            _this.setData({
+                listData : res.result
+            });
+        });
     },
     imageLoad : function(e){
         var size = util.imageUtil(e);

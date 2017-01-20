@@ -36,6 +36,6 @@ Page({
 
     itemClick : function(e){
         var id = e.currentTarget.dataset.id;
-        wx_api.go('medicineDetail',{ id : id } );
+        wx_api.go('newsDetail',{ id : id } );
     }
 })
