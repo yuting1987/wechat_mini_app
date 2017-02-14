@@ -14,7 +14,7 @@ var Config = {
         getNewDetail : 'data/getNewDetail',
     },
 
-    host: '',
+    host: 'http://121.43.160.200/resourse/',
 
     get: function (url) {
         if (this.host) {

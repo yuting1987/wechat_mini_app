@@ -1,4 +1,4 @@
-var medicines_arr = require('./allMedicineDetail');
+var medicines_arr = require('./allMedicineDetails');
 var util = require('../util/util');
 
 var arr = [];

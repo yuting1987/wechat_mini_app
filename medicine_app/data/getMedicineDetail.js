@@ -1,5 +1,5 @@
 //请按照此格式进行填写
-var arr = require('./allMedicineDetail');
+var arr = require('./allMedicineDetails');
 
 var findById = function(id){
     var result = {};

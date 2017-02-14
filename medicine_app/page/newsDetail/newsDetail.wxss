@@ -3,7 +3,9 @@
     padding: 20rpx 0;
 }
 .content{
-    margin: 0 40rpx;
+    margin: 20rpx 40rpx;
+    line-height: 40rpx;
+    color:#575757;
 }
 
 .head{
@@ -21,5 +23,7 @@
 .title2{
     line-height: 80rpx;
     font-size: 35rpx;
-    margin-bottom:20rpx; 
+    margin-bottom:10rpx;
+    font-weight: 600; 
+    color:#000;
 }
