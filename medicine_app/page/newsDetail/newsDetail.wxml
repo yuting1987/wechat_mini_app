@@ -3,7 +3,6 @@
         <text class="title1">{{listData.title}}\n</text>
         <text class="date">{{listData.date}}</text>
     </view>
-    <image wx:if='{{listData.imgUrl}}' src="{{listData.imgUrl}}"  style="padding-left : 40rpx ; width: {{imageWidth - 40}}px; height: {{imageHeight}}px;" bindload="imageLoad"></image>
     <view wx:for="{{listData.content}}" class="content">
         <view class="title2">{{item.title}}</view>
         <view style="margin-bottom:20rpx;" wx:for="{{item.des}}" wx:for-item="str">{{str}}</view>

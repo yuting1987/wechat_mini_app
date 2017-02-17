@@ -4,7 +4,7 @@
     text-align: center;
     color : white;
     background-color:rgb(81,195,50);
-    background: url('../../img/logo.png') no-repeat 38% 45%/ 60rpx,rgb(81,
+    background: url('../../img/logo.png') no-repeat 37% 40%/ 60rpx,rgb(81,
     195,50);
     padding-left: 10%; 
 }

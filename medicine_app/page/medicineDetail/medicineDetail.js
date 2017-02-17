@@ -7,8 +7,7 @@ var app = getApp();
 Page({
     data: {
         listData: null,
-        imageWidth : 0,
-        imageHeight : 0
+        images : {}
     },
 
     onLoad : function(options){
@@ -23,9 +22,17 @@ Page({
     },
     imageLoad : function(e){
         var size = util.imageUtil(e);
-        this.setData({
-            imageWidth : size.imageWidth,
-            imageHeight : size.imageHeight
-        })
+        var image = this.data.images; 
+      //将图片的datadata-index作为image对象的key,然后存储图片的宽高值
+      console.log(size);
+      console.log(e.currentTarget.dataset.imageid);      
+      image[e.currentTarget.dataset.imageid]={
+         width:size.imageWidth,
+         height:size.imageHeight
+      }
+      console.log(image);
+      this.setData({
+           images:image
+      })  
     }
 })
