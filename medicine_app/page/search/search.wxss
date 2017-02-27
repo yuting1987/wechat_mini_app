@@ -4,7 +4,7 @@
 
 .header{
     height: 120rpx;
-    background-color: rgb(81,195,50);
+    background-color: #D199D1;
     padding: 20rpx 50rpx;
     box-sizing: border-box;
     position: relative;
@@ -72,7 +72,7 @@
     height: 78%;
     position: absolute;
     right: 0;
-    top: 36rpx;
+    top: 11%;
 }
 .medicineList .left {
     width: 63%;
@@ -85,7 +85,7 @@
 .medicineList .detail{
     color: lightgreen;
     display: block;
-    background: url('../../img/arrowRightGreen.png') no-repeat center right;
+    background: url('http://121.43.160.200/resourse/img/arrowRightGreen.png') no-repeat center right;
     background-size: 26rpx;
     width: 148rpx;
 }
@@ -94,7 +94,7 @@
     margin-left: 30rpx;
     line-height: 80rpx;
     border-bottom: 1rpx solid #dfdfdf;
-    background: url('../../img/medicine.png') no-repeat center left;
+    background: url('http://121.43.160.200/resourse/img/medicine.png') no-repeat center left;
     background-size: 30rpx;
     padding-left: 35rpx;
     margin-right: 30rpx;
@@ -104,7 +104,7 @@
     margin-left: 30rpx;
     line-height: 80rpx;
     border-bottom: 1rpx solid #dfdfdf;
-    background: url('../../img/news.png') no-repeat center left;
+    background: url('http://121.43.160.200/resourse/img/news.png') no-repeat center left;
     background-size: 30rpx;
     padding-left: 35rpx;
     margin-right: 30rpx;
@@ -149,7 +149,7 @@
     margin-right: 30rpx;
     line-height: 80rpx;
     border-bottom: 1rpx solid #dfdfdf;
-    background: url('../../img/arrowRightGreen.png') no-repeat center right;
+    background: url('http://121.43.160.200/resourse/img/arrowRightGreen.png') no-repeat center right;
     background-size: 30rpx;
     color: #51c332;
 }

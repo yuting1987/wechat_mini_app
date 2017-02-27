@@ -21,7 +21,7 @@
 }
 
 .title2{
-    line-height: 80rpx;
+    padding: 24rpx 0;
     font-size: 35rpx;
     margin-bottom:10rpx;
     font-weight: 600; 

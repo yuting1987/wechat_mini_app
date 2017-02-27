@@ -38,5 +38,7 @@
         <image class="right" src="{{item.iconUrl}}"></image>
     </view>
     <view hidden="{{contentType == '3'&&newsData.length != 0&&allNewsData.length > 2?false:true}}" data-value="{{inputValue}}" data-type="news" class="more" bindtap="searchMore">查看更多相关新闻</view>
-    <view hidden="{{contentType == '3'&&newsData.length == 0&&listData.length == 0&&allNewsData.length > 1?false:true}}" class="empty">抱歉，未找到您要的信息</view>
+    <view class='empty' wx:if='{{allNewsData.length == 0 && allListData.length == 0}}'>
+        <text>未查询到相关信息</text>
+    </view>
 </view>   

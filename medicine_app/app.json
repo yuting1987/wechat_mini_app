@@ -9,8 +9,7 @@
   "window": {
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "龙猫药师",
-    "navigationBarBackgroundColor": "#51c332",
-    "backgroundColor": "#fbf9fe"
+    "navigationBarBackgroundColor": "#D199D1"
   },
   "networkTimeout": {
     "request": 10000,

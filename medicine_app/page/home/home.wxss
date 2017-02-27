@@ -3,15 +3,13 @@
     line-height: 200rpx;
     text-align: center;
     color : white;
-    background-color:rgb(81,195,50);
-    background: url('../../img/logo.png') no-repeat 37% 40%/ 60rpx,rgb(81,
-    195,50);
+    background: url('http://121.43.160.200/resourse/img/logo.png') no-repeat 35% 38%/ 90rpx,#D199D1;
     padding-left: 10%; 
 }
 
 .header{
     height: 120rpx;
-    background-color: rgb(81,195,50);
+    background-color: #D199D1;
     padding: 20rpx 50rpx;
     box-sizing: border-box;
     position: relative;

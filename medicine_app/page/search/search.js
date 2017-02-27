@@ -47,7 +47,8 @@ Page({
         }
         if(!e.detail.value){
             _this.setData({
-                contentType : "2"
+                contentType : "2",
+                allNewsData :[1]
             });
             return;
         } else if (e.detail.value.length < 2){
