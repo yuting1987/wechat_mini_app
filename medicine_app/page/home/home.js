@@ -1,6 +1,7 @@
 var modal = require('../../util/modal');
 var wx_api = require('../../wx/api');
 var ser = require('./service');
+var util = require('../../util/util');
 
 var app = getApp();
 
@@ -15,6 +16,8 @@ Page({
             if (!res.success){
                 return;
             }
+            console.log(res.result[0].title);
+            res.result[0].title = util.convertHtmlToText(res.result[0].title);
             _this.setData({
                 'news' : res.result
             });

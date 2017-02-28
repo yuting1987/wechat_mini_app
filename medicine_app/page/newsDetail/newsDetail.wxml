@@ -1,11 +1,15 @@
+<template name="msgItem">
+  <view wx:for="{{content}}" class="content">
+        <view wx:if="{{item.title}}" class="title2">{{item.title}}</view>
+        <view wx:if="{{item.subTitle}}" class="title3">{{item.subTitle}}</view>
+        <view style="margin-bottom:30rpx;" wx:for="{{item.des}}" wx:for-item="str">{{str}}</view>
+        <image wx:if="{{item.image}}" src="{{item.image}}" style="width: {{images[item.imageId].width - 40}}px; height: {{images[item.imageId].height}}px;" data-imageid="{{item.imageId}}" bindload="imageLoad"></image>
+    </view>
+</template>
 <view class="page">
     <view class="head">
         <text class="title1">{{listData.title}}\n</text>
         <text class="date">{{listData.date}}</text>
     </view>
-    <view wx:for="{{listData.content}}" class="content">
-        <view class="title2">{{item.title}}</view>
-        <view style="margin-bottom:20rpx;" wx:for="{{item.des}}" wx:for-item="str">{{str}}</view>
-        <image wx:if="{{item.image}}" src="{{item.image}}" style="width: {{images[item.imageId].width - 40}}px; height: {{images[item.imageId].height}}px;" data-imageid="{{item.imageId}}" bindload="imageLoad"></image>
-    </view>
+    <template is="msgItem" data="{{...listData}}"></template>
 </view>   

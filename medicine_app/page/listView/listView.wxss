@@ -44,7 +44,7 @@
 .medicineList .detail{
     color: lightgreen;
     display: block;
-    background: url('../../img/arrowRightGreen.png') no-repeat center right;
+    background: url('http://121.43.160.200/resourse/img/arrowRightGreen.png') no-repeat center right;
     background-size: 26rpx;
     width: 148rpx;
 }

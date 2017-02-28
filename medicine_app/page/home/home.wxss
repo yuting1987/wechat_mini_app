@@ -3,7 +3,7 @@
     line-height: 200rpx;
     text-align: center;
     color : white;
-    background: url('http://121.43.160.200/resourse/img/logo.png') no-repeat 35% 38%/ 90rpx,#D199D1;
+    background: url('http://121.43.160.200/resourse/img/newlogo.png') no-repeat 23% 38%/ 90rpx,#D199D1;
     padding-left: 10%; 
 }
 
@@ -71,5 +71,8 @@
     bottom: 30rpx;
     left: 0;
     color : #bebebe;
+}
+.red{
+    color: red;
 }
 
