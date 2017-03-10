@@ -2,7 +2,7 @@ module.exports ={
     id: 6,
     iconUrl : 'http://121.43.160.200/resourse/news/top1/image5.jpeg',
     imgUrl: '',
-    title: '安全用药 | 在家如何自行选择感冒药',
+    title: '在家如何自行选择感冒药',
     des: '',
     content: [
         {

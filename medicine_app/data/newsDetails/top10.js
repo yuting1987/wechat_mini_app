@@ -1,6 +1,6 @@
 module.exports ={
     id: 10,
-    iconUrl : 'http://121.43.160.200/resourse/news/top10/image1.gif',
+    iconUrl : 'http://121.43.160.200/resourse/news/top10/icon.jpeg',
     imgUrl: '',
     title: '谈谈宝宝服用【益生菌】的几个误区',
     des: '',

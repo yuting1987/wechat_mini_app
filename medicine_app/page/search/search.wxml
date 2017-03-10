@@ -1,20 +1,20 @@
 <view class="page">
     <view class="header">
         <icon type="search" size="18"/>
-        <input class="search" focus="true" type="text" placeholder="带您识药，请输入您想要找的药品名" bindinput="queryMedicine" value="{{inputValue}}"/>
+        <input class="search" focus="true" type="text" placeholder="搜疾病 / 科普文章" bindinput="queryMedicine" value="{{inputValue}}"/>
     </view>
     <view hidden="{{contentType == '3'?true:false}}" class="container">
         <view class="title">
             <text>查询记录</text>
             <text class="clear" bindtap='rm'>清除历史</text>
         </view>
-        <view class="emptyList" hidden='{{contentType == "1"?false:true}}'>无</view>
+        <view wx:if="{{!historyArr || historyArr.length == 0}}" class="emptyList">无</view>
         <view hidden="{{contentType == '2'?false:true}}" wx:for="{{historyArr}}" bindtap='query' data-text="{{item}}" class="list">
         {{item}}
         </view>
     </view>
     <view class="medicineTitle" hidden="{{contentType == '3'&&listData.length != 0?false:true}}">
-        药品
+        带您识药
     </view>
     <view wx:for="{{listData}}"  hidden="{{contentType == '3'?false:true}}" data-id="{{item.id}}" class="medicineList" bindtap="medicineClick">
         <text class="left">
@@ -28,7 +28,7 @@
     </view>
     <view hidden="{{contentType == '3'&&listData.length != 0&&allListData.length > 1?false:true}}" data-value="{{inputValue}}" data-type="medicine" class="more" bindtap="searchMore">查看更多相关药品</view>
     <view class="newsTitle" hidden="{{contentType == '3'&&newsData.length != 0?false:true}}">
-        热闻
+        温馨医疗
     </view>
     <view wx:for="{{newsData}}"  hidden="{{contentType == '3'?false:true}}" class="newsList"  data-id="{{item.id}}" bindtap="newsClick">
         <text class="left">
@@ -38,7 +38,7 @@
         <image class="right" src="{{item.iconUrl}}"></image>
     </view>
     <view hidden="{{contentType == '3'&&newsData.length != 0&&allNewsData.length > 2?false:true}}" data-value="{{inputValue}}" data-type="news" class="more" bindtap="searchMore">查看更多相关新闻</view>
-    <view class='empty' wx:if='{{allNewsData.length == 0 && allListData.length == 0}}'>
+    <view class='empty' wx:if='{{allNewsData.length == 0 && allListData.length == 0 && contentType != "1"}}'>
         <text>未查询到相关信息</text>
     </view>
 </view>   

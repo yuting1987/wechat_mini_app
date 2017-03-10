@@ -1,6 +1,6 @@
 module.exports ={
     id: 12,
-    iconUrl : 'http://121.43.160.200/resourse/news/top12/image1.jpeg',
+    iconUrl : 'http://121.43.160.200/resourse/news/top12/icon.png',
     imgUrl: '',
     title: '手把手教你婴幼儿湿疹的家庭护理',
     des: '',
@@ -124,7 +124,7 @@ module.exports ={
                 '1、目前没有任何一种药物可以根治湿疹。',
                 '2、50%以上的患儿随着年龄的增长，湿疹可自愈。 ',
                 '3、皮肤干燥是诱发湿疹的原因之一。（对，这跟你的“常识”不同，得了湿疹不是保持干燥，要保持滋润）',
-                '4、尽量避开过敏源和刺激物，锻炼宝宝的免疫力。/3。 '
+                '4、尽量避开过敏源和刺激物，锻炼宝宝的免疫力。'
             ],
             image : 'http://121.43.160.200/resourse/foot.jpeg',
             imageId : 'foot'

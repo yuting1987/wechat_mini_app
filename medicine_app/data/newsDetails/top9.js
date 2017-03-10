@@ -1,6 +1,6 @@
 module.exports ={
     id: 9,
-    iconUrl : 'http://121.43.160.200/resourse/news/top9/image1.jpeg',
+    iconUrl : 'http://121.43.160.200/resourse/news/top9/icon.jpeg',
     imgUrl: '',
     title: '益生菌，哪家强？只选对的，不选贵的',
     des: '',

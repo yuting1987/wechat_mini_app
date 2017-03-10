@@ -1,6 +1,6 @@
 module.exports ={
     id: 15,
-    iconUrl : 'http://121.43.160.200/resourse/news/top15/image1.jpeg',
+    iconUrl : 'http://121.43.160.200/resourse/news/top15/icon.jpeg',
     imgUrl: '',
     title: '流感疫苗到底要不要打？看过这篇文章你就清清楚楚啦',
     des: '',

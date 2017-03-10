@@ -1,6 +1,6 @@
 module.exports ={
     id: 13,
-    iconUrl : 'http://121.43.160.200/resourse/news/top13/image1.jpeg',
+    iconUrl : 'http://121.43.160.200/resourse/news/top13/icon.jpeg',
     imgUrl: '',
     title: '进入手足口病“高发季”，留心孩子身上的小红点',
     des: '',

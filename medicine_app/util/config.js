@@ -3,18 +3,19 @@ var Config = {
     proFlag: 'dev', // 开发环境dev 生产环境prod
     
     //判定服务器是否存在的标志 暂定没有服务器
-    server : false,
+    server : true,
 
     //接口
     accounts : {
         queryNews : 'data/queryNews',
-        queryAllNews : 'data/queryAllNews',
+        queryAllNews : '/api/details/queryDetailsByType',
+        // queryAllNews : 'data/queryAllNews',
         querySearch : 'data/querySearch',
         getMedicineDetail : 'data/getMedicineDetail',
         getNewDetail : 'data/getNewDetail',
     },
 
-    host: 'http://121.43.160.200/resourse/',
+    host: 'https://www.dc.com',
 
     get: function (url) {
         if (this.host) {

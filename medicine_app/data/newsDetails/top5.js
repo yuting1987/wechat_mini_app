@@ -1,6 +1,6 @@
 module.exports ={
     id: 5,
-    iconUrl : 'http://121.43.160.200/resourse/news/top2/icon.jpeg',
+    iconUrl : 'http://121.43.160.200/resourse/news/top5/icon.jpeg',
     imgUrl: '',
     title: '阿司匹林/美林/泰诺林，宝宝发烧后该怎么正确选择？',
     des: '',

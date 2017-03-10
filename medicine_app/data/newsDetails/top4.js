@@ -1,6 +1,6 @@
 module.exports ={
     id: 4,
-    iconUrl : 'http://121.43.160.200/resourse/news/top4/image1.jpeg',
+    iconUrl : 'http://121.43.160.200/resourse/news/top4/icon.png',
     imgUrl: '',
     title: '化痰药物哪个好 ? 易坦静 PK 沐舒坦',
     des: '',

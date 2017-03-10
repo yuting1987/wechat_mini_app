@@ -36,14 +36,14 @@
 
 .list{
     font-size: 30rpx;
-    margin-left: 30rpx;
+    margin-left: 50rpx;
     line-height: 80rpx;
     border-bottom: 1rpx solid #dfdfdf;
 }
 
 .list:last-child{
     margin-left: 0;
-    padding-left: 30rpx;
+    padding-left: 50rpx;
 }
 .emptyList{
     font-size: 30rpx;
